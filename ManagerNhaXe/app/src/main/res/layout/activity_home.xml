@@ -1,58 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:padding="20dp"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <TextView
+            android:text="Quản lý bãi giữ xe"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_dark"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="QUẢN LÝ BÃI GIỮ XE"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            app:cardCornerRadius="18dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:padding="18dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Xin chào 👋"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Chọn chức năng bạn muốn sử dụng"
+                    android:textColor="#666666"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
         <Button
             android:id="@+id/btnVehicle"
+            android:text="🚗 Quản lý xe"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Quản lý xe" />
+            android:layout_height="55dp" />
 
         <Button
             android:id="@+id/btnCheckIn"
+            android:text="🟢 Check-in gửi xe"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Check-in gửi xe" />
+            android:layout_height="55dp" />
 
         <Button
             android:id="@+id/btnCheckOut"
+            android:text="🔴 Check-out lấy xe"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Check-out lấy xe" />
+            android:layout_height="55dp" />
 
         <Button
             android:id="@+id/btnHistory"
+            android:text="📋 Lịch sử gửi xe"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lịch sử gửi xe" />
+            android:layout_height="55dp" />
 
         <Button
             android:id="@+id/btnProfile"
+            android:text="👤 Trang cá nhân"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Trang cá nhân" />
+            android:layout_height="55dp" />
 
         <Button
             android:id="@+id/btnLogout"
+            android:text="Đăng xuất"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Đăng xuất" />
+            android:layout_height="55dp" />
 
     </LinearLayout>
-
 </ScrollView>
