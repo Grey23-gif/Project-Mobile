@@ -2,5 +2,5 @@
     <string name="app_name">Quản lý bãi giữ xe</string>
     <string name="history_item">%1$s\nVào: %2$s\nRa: %3$s\nPhí: %4$s</string>
     <string name="vehicle_item">%1$s - %2$s\nChủ xe: %3$s</string>
-    <string name="profile_info">Họ tên: %1$s\nEmail: %2$s\nVai trò: %3$s\nToken: %4$s</string>
+    <string name="profile_info">Họ tên: %1$s\nEmail: %2$s\nVai trò: %3$s\n</string>
 </resources>

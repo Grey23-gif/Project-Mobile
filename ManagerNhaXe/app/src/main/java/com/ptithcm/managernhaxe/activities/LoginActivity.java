@@ -35,12 +35,36 @@ public class LoginActivity extends AppCompatActivity {
 
         vm = new ViewModelProvider(this).get(AuthViewModel.class);
 
-        findViewById(R.id.btnLogin).setOnClickListener(v ->
-                vm.login(
-                        email.getText().toString().trim(),
-                        pass.getText().toString().trim()
-                )
-        );
+        findViewById(R.id.btnLogin).setOnClickListener(v -> {
+            String emailText = email.getText().toString().trim();
+            String passText = pass.getText().toString().trim();
+
+            if (emailText.isEmpty()) {
+                email.setError("Vui lòng nhập email");
+                email.requestFocus();
+                return;
+            }
+
+            if (!android.util.Patterns.EMAIL_ADDRESS.matcher(emailText).matches()) {
+                email.setError("Email không đúng định dạng");
+                email.requestFocus();
+                return;
+            }
+
+            if (passText.isEmpty()) {
+                pass.setError("Vui lòng nhập mật khẩu");
+                pass.requestFocus();
+                return;
+            }
+
+            if (passText.length() < 6) {
+                pass.setError("Mật khẩu phải từ 6 ký tự");
+                pass.requestFocus();
+                return;
+            }
+
+            vm.login(emailText, passText);
+        });
 
         findViewById(R.id.btnRegister).setOnClickListener(v ->
                 startActivity(new Intent(this, RegisterActivity.class))

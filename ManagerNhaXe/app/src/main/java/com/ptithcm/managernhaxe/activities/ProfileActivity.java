@@ -24,8 +24,7 @@ public class ProfileActivity extends AppCompatActivity {
                         R.string.profile_info,
                         SharedPrefManager.getName(),
                         SharedPrefManager.getEmail(),
-                        SharedPrefManager.getRole(),
-                        SharedPrefManager.getToken()
+                        SharedPrefManager.getRole()
                 )
         );
     }

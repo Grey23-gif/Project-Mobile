@@ -54,25 +54,25 @@
 
         <Button
             android:id="@+id/btnVehicle"
-            android:text="🚗 Quản lý xe"
+            android:text="Quản lý xe"
             android:layout_width="match_parent"
             android:layout_height="55dp" />
 
         <Button
             android:id="@+id/btnCheckIn"
-            android:text="🟢 Check-in gửi xe"
+            android:text="Check-in gửi xe"
             android:layout_width="match_parent"
             android:layout_height="55dp" />
 
         <Button
             android:id="@+id/btnCheckOut"
-            android:text="🔴 Check-out lấy xe"
+            android:text="Check-out lấy xe"
             android:layout_width="match_parent"
             android:layout_height="55dp" />
 
         <Button
             android:id="@+id/btnHistory"
-            android:text="📋 Lịch sử gửi xe"
+            android:text="Lịch sử gửi xe"
             android:layout_width="match_parent"
             android:layout_height="55dp" />
 
